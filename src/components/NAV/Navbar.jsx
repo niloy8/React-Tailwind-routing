@@ -1,3 +1,5 @@
+import Link from "./Link";
+
 const routes = [
     { id: 1, name: 'Home', path: '/' },
     { id: 2, name: 'About', path: '/about' },
@@ -9,7 +11,11 @@ const routes = [
 const Navbar = () => {
     return (
         <div>
-
+            <ul className="md:flex">
+                {
+                    routes.map(route => <Link key={route.id} route={route}></Link>)
+                }
+            </ul>
         </div>
     );
 };

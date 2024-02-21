@@ -1,4 +1,8 @@
 # React + Vite
+/**
+Frist used a daisy UI component to make a navbar and then created a own navbar using jsx with different routes.
+**/
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
