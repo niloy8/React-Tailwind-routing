@@ -14,16 +14,17 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
+        <nav>
             <span className="md:hidden text-2xl" onClick={() => { setOpen(!open) }}>
                 {open ? <RxCross1></RxCross1> : <CiMenuBurger />}
             </span>
-            <ul className="md:flex">
+            <ul className={`md:flex bg-yellow-600 absolute md:static ml-4 md:m-0 duration-1000 ${open ? 'top-44' : '-top-96'}`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
             </ul>
-        </div>
+
+        </nav>
     );
 };
 
