@@ -1,4 +1,5 @@
 import './App.css'
+import LineChart from './components/Linechart/LineChart'
 import Nav from './components/NAV/Nav'
 import Navbar from './components/NAV/Navbar'
 import Gym from './components/Priceoption/Gym'
@@ -9,6 +10,7 @@ function App() {
       <Nav></Nav>
       <Navbar></Navbar>
       <Gym></Gym>
+      <LineChart></LineChart>
     </>
   )
 }
