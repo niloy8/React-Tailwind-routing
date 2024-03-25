@@ -10,7 +10,7 @@ const Price = ({ option }) => {
                 <span className='text-4xl'>{price}</span>
                 <span className='text-1xl'>\{duration}</span>
             </h2>
-            {features.map((feature, index) => <p key={index} className='flex-grow'>{feature}</p>)}
+            {features.map((feature, index) => <p key={index} className='flex-grow text-left ml-4'>{feature}</p>)}
             <button className='bg-green-600 hover:bg-green-950 p-3 mt-3'>BUY NOW</button>
         </div>
     );

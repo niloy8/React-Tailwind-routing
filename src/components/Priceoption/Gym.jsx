@@ -67,7 +67,7 @@ const Gym = () => {
         }
     ];
     return (
-        <div className="md:grid grid-cols-3 gap-2 p-4">
+        <div className="md:grid grid-cols-3 gap-2 flex flex-col  p-4">
             {gymPriceOptions.map(option => <Price key={option.id} option={option}></Price>)}
         </div>
     );
